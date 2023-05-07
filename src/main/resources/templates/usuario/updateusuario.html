@@ -69,10 +69,11 @@ const id = sessionStorage.getItem('id');
     
     
     const editAlumno = () => {
-		  $("#crearUsuarioBtn").on("click", function () {
-		    
+		  $("#crearUsuarioBtn").on("click", function (e) {
+			  e.preventDefault();
+			  
 		    const datosAlumno = {
-		      id: $("#id").val(),	
+		     
 		      nombre: $("#nombre").val(),
 		      email: $("#exampleInputEmail").val(),
 		    };
@@ -90,7 +91,7 @@ const id = sessionStorage.getItem('id');
 		        
 		      },
 		      error: function() {
-		          mostrarMensaje("Ha ocurrido un error al ac el usuario");
+		          mostrarMensaje("Ha ocurrido un error al editar al usuario");
 		        }
 		      
 		    });

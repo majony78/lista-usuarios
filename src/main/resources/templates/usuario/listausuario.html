@@ -195,7 +195,8 @@
 		
 		// Eliminar usuario
 		const deleteUsuario = () => {
-		    $('#tbl-test').on("click", "#btneliminar", function () {
+		    $('#tbl-test').on("click", "#btneliminar", function (e) {
+					  e.preventDefault();
 		        if (confirm("¿Seguro de eliminar al alumno?")) {
 		            let btnDelete = $(this)[0].parentElement.parentElement;
 		            let id = $(btnDelete).attr("usuarioId");
@@ -206,7 +207,7 @@
 		                type: "DELETE",
 		                dataType: "json",
 		                success: (res) => {
-		                	
+		                	//getListarUsuarios();
 		                    
 		                },
 		            });
