@@ -74,7 +74,7 @@ public class NavigationController {
 	
 
 	@GetMapping("/index5")
-	public String index5() {
+	public String index51() {
 		return "index5";
 	}
 	
