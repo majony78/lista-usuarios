@@ -66,10 +66,12 @@ public class NavigationController {
 	}
 	
 	
-	@GetMapping("/index3")
-	public String index3() {
-		return "index3";
+	
+	@GetMapping("/index4")
+	public String index4() {
+		return "index4";
 	}
+	
 	
 	
 }
