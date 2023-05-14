@@ -72,6 +72,13 @@ public class NavigationController {
 		return "index4";
 	}
 	
+
+	@GetMapping("/index5")
+	public String index5() {
+		return "index5";
+	}
+	
+	
 	
 	
 }
